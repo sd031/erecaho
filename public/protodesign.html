@@ -1,0 +1,220 @@
+html><head>
+  <link rel="stylesheet" type="text/css" class="__meteor-css__" href="/a5b56163d734e87fd4b6ef621b7f380e70d027a5.css">
+
+
+<script id="facebook-jssdk" src="//connect.facebook.net/en_US/sdk.js"></script><script type="text/javascript">__meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%401.1.0.2%22%2C%22ROOT_URL%22%3A%22http%3A%2F%2Flocalhost%3A3000%2F%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22appId%22%3A%221jbq97a5iw35y1hmorz7%22%2C%22autoupdateVersion%22%3A%22de736010a27a12093ccd99929a03964f37069e15%22%2C%22autoupdateVersionRefreshable%22%3A%22108d54ad845fd6dffebd61a3bdeffcc05323d381%22%2C%22autoupdateVersionCordova%22%3A%22none%22%7D"));</script>
+
+  <script type="text/javascript" src="/packages/underscore.js?0a80a8623e1b40b5df5a05582f288ddd586eaa18"></script>
+  <script type="text/javascript" src="/packages/meteor.js?43b7958c1598803e94014f27f5f622b0bddc0aaf"></script>
+  <script type="text/javascript" src="/packages/json.js?e22856eae714c681199eabc5c0710b904b125554"></script>
+  <script type="text/javascript" src="/packages/base64.js?1a63019243b73298e2964e6d4680f25bca657726"></script>
+  <script type="text/javascript" src="/packages/ejson.js?71047b64b5196348bdbe5fd5eea9ac97a5a9eb14"></script>
+  <script type="text/javascript" src="/packages/logging.js?07e201b648f16be8435a4f666156995eeda0c750"></script>
+  <script type="text/javascript" src="/packages/reload.js?da8974b7231dd8c0caccb5f322dcf97329d486d1"></script>
+  <script type="text/javascript" src="/packages/tracker.js?6d0890939291d9780f7e2607ee3af3e7f98a3d9c"></script>
+  <script type="text/javascript" src="/packages/random.js?fe7b46080c91ce482acf6fc326afbc5b176f0502"></script>
+  <script type="text/javascript" src="/packages/retry.js?1f1dd2c35d300110fdaba51ce4473583bc3bf031"></script>
+  <script type="text/javascript" src="/packages/check.js?ac81167b8513b85b926c167bba423981b0c4cf9c"></script>
+  <script type="text/javascript" src="/packages/id-map.js?9ea6eaae8d74693ce2505a858d9a5e60cf191298"></script>
+  <script type="text/javascript" src="/packages/ordered-dict.js?bf8af2f26c8d96bf8b2e6b407d3ed69f23c2cd37"></script>
+  <script type="text/javascript" src="/packages/geojson-utils.js?81b79d5cf96d00b4b7a28987debcffb665c17526"></script>
+  <script type="text/javascript" src="/packages/minimongo.js?af9eb9d7447544ca9b839a3dcf7ed2da2209b56c"></script>
+  <script type="text/javascript" src="/packages/ddp.js?d1840d3ba04c65ffade261f362e26699b7509706"></script>
+  <script type="text/javascript" src="/packages/insecure.js?3dc9d4a2dad55999b5b15a447d57f3d5fb66b290"></script>
+  <script type="text/javascript" src="/packages/mongo.js?3cfe0c5981c197df33036a37574850f057e934a6"></script>
+  <script type="text/javascript" src="/packages/autoupdate.js?9a5ea03bf057815385bf569c7acc2c285c005491"></script>
+  <script type="text/javascript" src="/packages/meteor-platform.js?499a2f8522e25820b1153c69a92751ccaae507b3"></script>
+  <script type="text/javascript" src="/packages/autopublish.js?c3059a78bb200b171099fc4fa1a9345101790ddb"></script>
+  <script type="text/javascript" src="/packages/jquery.js?dd8bac56f8fd3666d433d2285ae01e52597cc51a"></script>
+  <script type="text/javascript" src="/packages/materialize_materialize.js?0b80cbda18ca9012a2d963f00c95da52c6cf16df"></script>
+  <script type="text/javascript" src="/packages/localstorage.js?9ec7d68858d2e33aa807e5cfd5e12bb4d62fe00c"></script>
+  <script type="text/javascript" src="/packages/callback-hook.js?2dd5338ef4585da6eadefd19681e01ae0a1cd8d7"></script>
+  <script type="text/javascript" src="/packages/deps.js?504589e1e9585dec8f9f6094e5a87b22de3783a1"></script>
+  <script type="text/javascript" src="/packages/htmljs.js?567eb96d5d22631c03d6aca6afa4c42f0d1295f2"></script>
+  <script type="text/javascript" src="/packages/observe-sequence.js?0532a9dd76dd78f543eb4d79a1e429df186d8bde"></script>
+  <script type="text/javascript" src="/packages/reactive-var.js?20335b7b37165980ddd9f23943b2e5b00aae1cc2"></script>
+  <script type="text/javascript" src="/packages/blaze.js?a5c324925e5f6e800a4c618d71caf2848b53bf51"></script>
+  <script type="text/javascript" src="/packages/accounts-base.js?7c29db5c21a76726509bb6bb2a68a2b4b1ecf657"></script>
+  <script type="text/javascript" src="/packages/url.js?2312d739008b2ffa52f13c77c5d6fc59c9e17d56"></script>
+  <script type="text/javascript" src="/packages/oauth.js?f920ea4efaa1a497bedf1222ede721c417350dca"></script>
+  <script type="text/javascript" src="/packages/accounts-oauth.js?22d7668f8f57baf74a59fad0ff324ca5004edcbb"></script>
+  <script type="text/javascript" src="/packages/service-configuration.js?262da6fb1e9c97be84333c429c9a2929c80f8e3b"></script>
+  <script type="text/javascript" src="/packages/oauth2.js?5fa58098b89a1467037a0b8eb4b17ad33b72cf07"></script>
+  <script type="text/javascript" src="/packages/templating.js?376767bb0d2463b3b2615a1b90e77f6b22d39d7b"></script>
+  <script type="text/javascript" src="/packages/facebook.js?e8bc0ab4c4ab696c2c04e3494f3a08fbbfdaeff7"></script>
+  <script type="text/javascript" src="/packages/accounts-facebook.js?9e890f917b8ec3c3ea39544407a7e982dbc6d5ae"></script>
+  <script type="text/javascript" src="/packages/reactive-dict.js?1cb61826ceb23464171f17c2191c7e04a9b91508"></script>
+  <script type="text/javascript" src="/packages/session.js?daf192a7244079d45db32a6fc26ebc3881fc1aa3"></script>
+  <script type="text/javascript" src="/packages/accounts-ui-unstyled.js?14a3fc68e1a01e2a5a37fa082ac84346e46ba1de"></script>
+  <script type="text/javascript" src="/packages/less.js?7d1bf981a25a449d6270558bcfc983313c40cd26"></script>
+  <script type="text/javascript" src="/packages/accounts-ui.js?1ff79db616cce9b320fe8aed6103eded31248467"></script>
+  <script type="text/javascript" src="/packages/webapp.js?e1be090051b82f046484dccc2de7d747e50c7328"></script>
+  <script type="text/javascript" src="/packages/livedata.js?718526445deb4d9baacb6d92c551adea1d36c1e1"></script>
+  <script type="text/javascript" src="/packages/ui.js?5a663333fd30f8fd913f110e0ef779e84f67c4b8"></script>
+  <script type="text/javascript" src="/packages/spacebars.js?7bafbe05ec09b6bbb6a3b276537e4995ab298a2f"></script>
+  <script type="text/javascript" src="/packages/launch-screen.js?495e58cf2465ba553324c68301cc62076b1fda1e"></script>
+  <script type="text/javascript" src="/packages/global-imports.js?524f9ecdbd2709a6c867e223d91c39d2fc966b29"></script>
+  <script type="text/javascript" src="/client/templates/campaigns/template.campaignsAll.js?851b7567f0c804796186c7103a89ae8270df3b7c"></script>
+  <script type="text/javascript" src="/client/templates/campaigns/template.campaignsFacebook.js?894ce8fb46fc5c80315464e3ce3d4b5cd760aeb0"></script>
+  <script type="text/javascript" src="/client/templates/connectionStatus/template.socioConnectionStatus.js?232058f2af6c82474dd3d993a8d6f4e774d82931"></script>
+  <script type="text/javascript" src="/client/templates/contacts/template.contactsAll.js?4250ed8e7f2251f85c6388ebe4f017f3d197ffd6"></script>
+  <script type="text/javascript" src="/client/templates/feeds/template.feedsAll.js?fb3a6c3f031317628930b06ce075562f7c302d00"></script>
+  <script type="text/javascript" src="/client/templates/feeds/template.feedsFacebook.js?171adaa4c92d1d719be8453caa69115598848443"></script>
+  <script type="text/javascript" src="/client/templates/feeds/template.feedsTweets.js?5da68cd076cd978e9caafd89a1d90350630de2bd"></script>
+  <script type="text/javascript" src="/client/layout/template.body.js?627aae8d6d6a57f730037ce49c2fa0c9cc28c554"></script>
+  <script type="text/javascript" src="/client/layout/template.mainContentWrapper.js?86777b4db9527fd76d4f34219528bf0574c14c0e"></script>
+  <script type="text/javascript" src="/client/layout/template.mainContentWrapperCardTester.js?1532685db71adc162bba51b587ee4655da37e908"></script>
+  <script type="text/javascript" src="/client/layout/template.sideNavTemp.js?57d67c1b3055e34f9110f36be742c168f63c7ea5"></script>
+  <script type="text/javascript" src="/client/layout/template.testForm.js?4ba9cf9a16b0fa4ced9eb6387e085915d99e5ae1"></script>
+  <script type="text/javascript" src="/client/layout/template.testTemsp.js?9575f660d791c9a91504247e60313f62f1ad3afb"></script>
+  <script type="text/javascript" src="/client/layout/template.tsetAnimatedStaggeredList.js?9f7c57c2cd73af7e92883cd288cf5676d7d487b5"></script>
+  <script type="text/javascript" src="/client/facebookClientWorker.js?b00da21ef2ea47bfdeb53e4b112bacb5433f687e"></script>
+  <script type="text/javascript" src="/client/globalClient.js?cc4a13486465c08a2577d8cbdd5a9133cade974c"></script>
+
+
+
+<title>meteorialize</title>
+  <link href="css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css">
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f8;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #3a5795;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{max-height:590px;min-height:590px;max-width:500px;min-width:500px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;left:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #2f477a;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f8;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body class="grey lighten-4">
+
+
+
+
+  
+  
+  
+  
+  
+
+  
+  <header>
+        <nav>
+
+            <div class="nav-wrapper grey lighten-4">
+                <a href="#!" class="valign"><img src="/images/logo.jpg" style="margin-top:10px;"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-facebook left" style="color:#3b5998"></i>
+                            <i class="mdi mdi-arrow-up-bold-circle-outline left" style="color:#4caf50"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-twitter left" style="color:#4099FF"></i>
+                            <i class="mdi mdi-arrow-down-bold-circle left" style="color:#d50000"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-instagram left" style="color:#517fa4"></i>
+                            <i class="mdi mdi-arrow-up-bold-circle-outline left" style="color:#4caf50"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-pinterest left" style="color:#C92228"></i>
+                            <i class="mdi mdi-arrow-up-bold-circle-outline left" style="color:#4caf50"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <form>
+                            <div class="input-field">
+                              <input id="search" type="search" required="">
+                              <label for="search"><i class="mdi-action-search" style="color:#212121"></i></label>
+                              <i class="mdi-navigation-close"></i>
+                            </div>
+                          </form>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi-navigation-menu" style="color:#212121"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+
+            
+
+            <ul id="slide-out" class="side-nav fixed mainSideNavUL" style="width: 60px; margin-top:64px;">
+                
+                <li class="sideNavigationIcons mainSideNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="tiny mdi-navigation-arrow-back"></i>
+                    </span>
+                </li>
+                <li class="dashboardAll mainSideNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="left tiny mdi-action-dashboard"></i>
+                        <a href="#!">Dashboard</a>
+                    </span>
+                </li>
+                <li class="feedsAll mainSideNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="left tiny mdi-action-list"></i>
+                        <a href="#!">Feed</a>
+                    </span>
+                </li>
+                <li class="contactsAll mainSideNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-communication-contacts"></i>Contacts</span>
+                </li>
+                <li class="campaignsAll mainSideNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-notification-event-note"></i>Campaigns</span>
+                </li>
+                <li class="sideNavEmailItem mainSideNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-communication-email"></i>Email</span>
+                </li>
+                <li class="sideNavAnalyticsItem mainSideNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-action-assessment"></i>Analytics</span>
+                </li>
+
+            </ul>            
+
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+        </nav>
+    </header>
+    <main class="container">
+        
+  
+    
+    
+    <div class="row">
+        <div class="col s10 offset-s2">
+          <div class="card blue-grey darken-2 z-depth-2">
+            <div class="card-content white-text">
+              <span class="card-title">New Facebook Campaign</span>
+              <div class="row">
+                  <form class="col s12 newFBMsgForm">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="newFBMsgTextArea" class="materialize-textarea"></textarea>
+                        <label for="newFBMsgTextArea">Your New Facebook Post</label>
+                      </div>
+                    </div>
+                    <button class="newFBMsgFormSubmitBtn btn waves-effect waves-light col s2 offset-s8" type="submit" name="action">Post</button>
+                    <div class="preloader-wrapper active hide newFBMsgFormSubmitBtnPreLoader">
+                  <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div><div class="gap-patch">
+                      <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                  </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+  
+  
+    </main><div class="hiddendiv common"></div><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div><div id="toast-container"></div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="http://static.ak.facebook.com/connect/xd_arbiter/1ldYU13brY_.js?version=41#channel=f13ae14994&amp;origin=http%3A%2F%2Flocalhost%3A3000" style="border: none;"></iframe><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://s-static.ak.facebook.com/connect/xd_arbiter/1ldYU13brY_.js?version=41#channel=f13ae14994&amp;origin=http%3A%2F%2Flocalhost%3A3000" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div></body></html>

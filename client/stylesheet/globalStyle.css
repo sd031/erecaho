@@ -1,0 +1,46 @@
+  main, footer {
+    padding-left: 160px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    main, footer {
+      padding-left: 0;
+    }
+  }
+  
+   html {
+    font-family: GillSans, Calibri, Trebuchet, sans-serif;
+  }
+
+  #toast-container{
+    top:90%;
+    right:0.7%;
+  }
+  
+  .toast{
+    background-color:#fb8c00;
+  }
+
+ #slide-out-campaignsNavUL li{
+  opacity: 0;
+}
+
+.logoBasedDarkGrey{
+  color:#5A5A5A;
+}
+/*    header, main, footer {
+    padding-left: 240px;
+  }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }*/
+
+  .thumbnailFbImagePicker {
+    float: left;
+    width: 110px;
+    height: 90px;
+    margin: 5px;
+}

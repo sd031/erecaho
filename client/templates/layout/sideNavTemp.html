@@ -1,0 +1,161 @@
+<template name="sideNavTemp">
+    <header>
+        <nav>
+
+            <div class="nav-wrapper grey lighten-4">
+                <a href="#!" class="valign"><img src="/images/internal/logo.jpg" style="margin-top:10px;"/></a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-facebook left" style="color:#3b5998"></i>
+                            <i class="mdi mdi-arrow-up-bold-circle-outline left" style="color:#4caf50"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-twitter left" style="color:#4099FF"></i>
+                            <i class="mdi mdi-arrow-down-bold-circle left" style="color:#d50000"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-instagram left" style="color:#517fa4"></i>
+                            <i class="mdi mdi-arrow-up-bold-circle-outline left" style="color:#4caf50"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi mdi-pinterest left" style="color:#C92228"></i>
+                            <i class="mdi mdi-arrow-up-bold-circle-outline left" style="color:#4caf50"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <form>
+                            <div class="input-field">
+                              <input id="search" type="search" required>
+                              <label for="search"><i class="mdi-action-search" style="color:#212121"></i></label>
+                              <i class="mdi-navigation-close"></i>
+                            </div>
+                          </form>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="mdi-navigation-menu" style="color:#212121"></i>
+                        </a>
+                    </li>
+                    
+                </ul>
+
+            </div>
+
+            <ul id="slide-out-homeNavUL" class="side-nav fixed mainSideNavUL" style="background-color:white;">
+                <li class="valign-wrapper mainSideNavLI" style="margin-top:20px;">
+                    <a href="#!" class="valign"><img src="/images/internal/logo.jpg" />
+                    </a>
+                </li>
+                <li class="sideNavigationIcons mainSideNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="tiny mdi-navigation-arrow-back"></i>
+                    </span>
+                </li>
+                <li class="dashboardAll mainSideNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="left tiny mdi-action-dashboard"></i>
+                        <a href="#!">Dashboard</a>
+                    </span>
+                </li>
+                <li class="feedsAll mainSideNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="left tiny mdi-action-list"></i>
+                        <a href="#!">Feed</a>
+                    </span>
+                </li>
+                <li class="contactsAll mainSideNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-communication-contacts"></i>Contacts</span>
+                </li>
+                <li class="campaignsAll mainSideNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-notification-event-note"></i>Campaigns</span>
+                </li>
+                <li class="sideNavEmailItem mainSideNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-communication-email"></i>Email</span>
+                </li>
+                <li class="sideNavAnalyticsItem mainSideNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-action-assessment"></i>Analytics</span>
+                </li>
+                <li class="restaurantAll mainSideNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-maps-local-restaurant"></i>Restaurant</span>
+                </li>
+
+            </ul>            
+
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+            <ul id="slide-out-campaignsNavUL" class="side-nav fixed campaignsNavUL" style="background-color:white;">
+                <li class="valign-wrapper campaignsNavLI" style="margin-top:20px;">
+                    <a href="#!" class="valign"><img src="/images/internal/logo.jpg" />
+                    </a>
+                </li>
+                <li class="sideNavigationIcons campaignsNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="tiny mdi-navigation-arrow-back"></i>
+                    </span>
+                </li>
+                <li class="campaignNow campaignsNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="left tiny mdi-action-dashboard"></i>
+                        <a href="#!">Campaign Now</a>
+                    </span>
+                </li>
+                <li class="feedsAll campaignsNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="left tiny mdi-action-list"></i>
+                        <a href="#!">Schedule Campaign</a>
+                    </span>
+                </li>
+                <li class="campaignsAll campaignsNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-notification-event-note"></i>Upcoming Campaigns</span>
+                </li>
+                <li class="newFacebookPost campaignsNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-communication-contacts"></i>New Facebook Post</span>
+                </li>
+                <li class="campaignsAll campaignsNavLI">
+                    <span class="logoBasedDarkGrey"><i class="left tiny mdi-notification-event-note"></i>New Tweet</span>
+                </li>
+            </ul>            
+
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+            <ul id="slide-out-restaurantNavUL" class="side-nav fixed restaurantNavUL" style="background-color:white;">
+                <li class="valign-wrapper restaurantNavLI" style="margin-top:20px;">
+                    <a href="#!" class="valign"><img src="/images/internal/logo.jpg" />
+                    </a>
+                </li>
+                <li class="sideNavigationIcons restaurantNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="tiny mdi-navigation-arrow-back"></i>
+                    </span>
+                </li>
+                <li class="feedsAll restaurantNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="mdi mdi-library-books"></i>Menu Management                        
+                    </span>
+                </li>
+                <li class="feedsAll restaurantNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="left tiny mdi-action-list"></i>
+                        <a href="#!">Oder Management</a>
+                    </span>
+                </li>
+                <li class="restaurantAnalyticsNavLI restaurantNavLI">
+                    <span class="logoBasedDarkGrey">
+                        <i class="left tiny mdi-action-list"></i>
+                        <a href="#!">Analytics</a>
+                    </span>
+                </li>
+            </ul>            
+
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+
+        </nav>
+    </header>
+</template>

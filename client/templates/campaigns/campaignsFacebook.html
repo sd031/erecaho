@@ -1,0 +1,102 @@
+<template name="campaignsFacebookTmpl">
+  <div class="container">
+    {{> newFbMsgTemplateCardBased }}  
+  </div>
+	
+</template>
+
+<template name="newFbMsgTemplateCardBased">
+	<div class="row">
+        <div class="col s10 offset-s2">
+          <div class="card blue-grey darken-2 z-depth-2">
+            <div class="card-content white-text">
+              <span class="card-title">New Facebook Campaign</span>
+              <div class="row">
+                  <form class="col s12 newFBMsgForm">
+                    <div class="row">
+
+                      <div class="input-field col s12">
+                        <textarea id="newFBMsgTextArea" class="materialize-textarea"></textarea>
+                        <label for="newFBMsgTextArea">Your New Facebook Post</label>
+                      </div>
+
+                      <!-- Modal Trigger -->
+                       <a class="waves-effect waves-light btn modal-trigger col s2" href="#modal1">Image</a>
+
+                       <div class="col s2">
+
+                                <label for="{{selectedImageFSFileHelper._id}}">
+                                    {{selectedImageFSFileHelper.name}}
+                                    <img src="{{selectedImageFSFileHelper.url}}" alt="thumbnail" class="thumbnailFbImagePicker imageClassForFBUpload">
+                                </label>
+                              </div>
+
+                              <div class="col s2">CRAPDATA</div>
+
+                       <div class="input-field col s6">
+                        <input id="newFBMsgLunkURLInput" class="validate" type="text"/>
+                        <label for="newFBMsgLunkURLInput">Link to URL</label>
+                      </div>
+
+                       <!-- Modal Structure -->
+                       <div id="modal1" class="modal" style="color:#5a5a5a;">
+                         <div class="modal-content">
+
+                          <div class="row">
+
+                           <h4 class="col s4">Existing Pictures</h4>
+                           <div class="file-field input-field col s8">
+                                 <input class="file-path validate" type="text"/>
+                                 <div class="btn">
+                                   <span>Add New</span>
+                                   <input type="file" class="uploadImageClass"/>
+                                 </div>
+                               </div>
+
+                            </div>
+                            <hr>
+
+                          <div class="row">
+                            {{#each fbImagesuploads}}
+
+                              <div class="col s4">
+                                <input name="group1" type="radio" id="{{this._id}}" class="selectedFBIdentifierClass"/>
+
+                                <label for="{{this._id}}">
+                                    {{this.name}}
+                                    <img src="{{this.url}}" alt="thumbnail" class="thumbnailFbImagePicker">
+                                </label>
+                              </div>
+  
+                            {{/each}}
+                          </div>
+
+                         </div>
+                         <div class="modal-footer">
+                           <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                         </div>
+                       </div>
+
+                      
+
+                    </div>
+
+                    <button class="newFBMsgFormSubmitBtn btn waves-effect waves-light col s2 offset-s8" type="submit" name="action">Post</button>
+                    <div class="preloader-wrapper active hide newFBMsgFormSubmitBtnPreLoader">
+                  <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div><div class="gap-patch">
+                      <div class="circle"></div>
+                    </div><div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                  </form>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</template>
